@@ -3,12 +3,24 @@
 
 <!-- head -->
 <head>
+	<!-- 
+	<link rel="stylesheet" href="js/jquery.fancybox.min.css" />
+	<script src="js/jquery.fancybox.min.js"></script>
+	-->
+
+	<!--  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!--  -->
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<!--  -->
 	<title>EMS Marketing Communications Inc.</title>
 	<meta charset="UTF-8" />
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
 </head>
 <!-- end head -->
 
@@ -110,7 +122,7 @@
 					<p>An award-winning video funded by BPA Worldwide as part of the industry-wide Buy Safe Media campaign.</p>
 				</div>
 
-				<div class="portfolio__img">
+				<div class="portfolio__img js-click-for-video">
 					<img src="opt-imgs/boss.jpg" alt="Crowd of People">
 				</div>
 
@@ -121,6 +133,15 @@
 	</div>
 	<!-- end portfolio area -->
 
+	<div class="view-video">
+		<video source src="BPA-Movie-h264-640x480.mov" type="video/mp4" controls width="100%">
+		</video>
+		<div class="js-exit-video">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
 	<!-- footer -->
 	<footer class="footer">
 		<div class="wrapper">
@@ -129,6 +150,16 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+
+	<script>
+		$('.js-click-for-video').click(function(){
+			$('.view-video').fadeToggle();
+		});
+
+		$('.js-exit-video').click(function(){
+			$('.view-video').fadeToggle();
+		});
+	</script>
 
 </body>
 <!-- end body -->
