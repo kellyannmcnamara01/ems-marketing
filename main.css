@@ -1,0 +1,189 @@
+/*	colours:
+	navy: #16296f;
+	light grey : #efefef;
+	dark grey: #3c3c3e;
+	orange: #f06449;
+*/
+
+* {
+	margin: 0 auto;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+body {
+	font-size: 62.5%;
+	margin: 0 auto;
+	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	text-rendering: geometricPrecision;
+}
+body::after {
+	content: '';
+	display: block;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.25);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+h1 {
+	font-size: 4.5em;
+	color: #efefef;
+	font-weight: 300;
+	line-height: 0.9em;
+	padding-bottom: 30px;
+}
+h2 {
+	font-size: 2.5em;
+	color: #efefef;
+	font-weight: 300;
+	padding-bottom: 65px;
+}
+h3 {
+	font-size: 2.5em;
+	color: #16296f;
+	padding-bottom: 1em;
+}
+p {
+	font-size: 1.5em;
+	color: #3c3c3e;
+	padding-bottom: 2em;
+	line-height: 2;
+}
+
+.intro {
+	position: relative;
+	display: flex;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+40,16296f+41 */	
+}
+
+.intro p {
+	color: #efefef;
+}
+
+.intro__left {
+	width: 45%;
+	overflow: hidden;
+	position: relative;
+	background: #efefef;
+}
+
+.intro__left img {
+	/*width: 100%;*/
+	width: 460px;
+	position: absolute;
+	right: 7%;
+	bottom: 0;
+}
+
+.intro__right {
+	width: 55%;
+	padding-left: 5%;
+	padding-top: 125px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	background-color: #16296f;
+	margin-left: 0;
+}
+
+.intro__right h1, .intro__right h2, .intro__right p {
+	max-width: 515px;
+	margin-left: 0;
+}
+
+.main-copy {
+	padding: 50px 0;
+}
+
+.main-copy__row {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 30px 0;
+	position: relative;
+}
+
+.main-copy__text-block {
+	width: 50%;
+	margin: 0;
+}
+
+.one h3, .one p {
+	width: 66%;
+	margin-left: 0;
+}
+
+.two h3, .two p {
+	width: 66%;
+	margin-right: 0;
+}
+
+.left-margin__text-block h3, .left-margin__text-block p {
+	margin-left: 10%;
+}
+
+.right-margin__text-block h3, .right-margin__text-block p {
+	margin-right: 10%;
+}
+
+.main-copy__img-block {
+	position: absolute;
+	top: calc(50% - 1.5em );
+	left: -33%;
+	transform: translateY(-50%);
+	max-width: 342px;
+}
+
+.main-copy__img-block::after {
+	content: '?';
+	display: block;
+	font-weight: 700;
+	font-size: 250px;
+	color: rgba(255, 255, 255, 0.75);
+	position: absolute;
+	top: 50%;
+	right: 25%;
+	transform: translateY(-50%);
+}
+
+.main-copy__img-block img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
