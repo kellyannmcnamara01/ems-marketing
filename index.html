@@ -8,6 +8,8 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	-->
 
+	<meta name="viewport" content="width=device-width">
+
 	<!--  -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -77,7 +79,7 @@
 			</div>
 
 			<div class="main-copy__text-block third__text-block">
-				<h3>JMANAGING RISK</h3>
+				<h3>MANAGING RISK</h3>
 				<p>His work with BPA Worldwide has allowed him to provide strong leadership to his clients concerning the risky business practice of advertising in media channels--print, digital and in-person--that provide no third party verification of their audience access claims.</p>
 			</div>
 
@@ -134,7 +136,7 @@
 	<!-- end portfolio area -->
 
 	<div class="view-video">
-		<video source src="BPA-Movie-h264-640x480.mov" type="video/mp4" controls width="100%">
+		<video source src="BPA-Movie-h264-640x480.mov" type="video/mp4" controls width="100%" id="bpa-movie">
 		</video>
 		<div class="js-exit-video">
 			<span></span>
@@ -146,7 +148,7 @@
 	<footer class="footer">
 		<div class="wrapper">
 			<h3>Contact</h3>
-			<p><a href="mailto:">email placement</a></p>
+			<p><a href="mailto:rwillingham@emsmarketing.ca">rwillingham@emsmarketing.ca</a></p>
 		</div>
 	</footer>
 	<!-- end footer -->
@@ -154,10 +156,12 @@
 	<script>
 		$('.js-click-for-video').click(function(){
 			$('.view-video').fadeToggle();
+			$('#bpa-movie').get(0).play();
 		});
 
 		$('.js-exit-video').click(function(){
 			$('.view-video').fadeToggle();
+			$('#bpa-movie').get(0).pause();
 		});
 	</script>
 
